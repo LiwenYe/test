@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务十二：学习CSS 3的新特性</title>
+    <link href="task12.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>网站</th>
+                        <th>热度</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>百度前端技术学院</td>
+                        <td>13000</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>百度前端技术学院</td>
+                        <td>12000</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>百度前端技术学院</td>
+                        <td>11000</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>百度前端技术学院</td>
+                        <td>10000</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>百度前端技术学院</td>
+                        <td>9000</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>百度前端技术学院</td>
+                        <td>8000</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>百度前端技术学院</td>
+                        <td>7000</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>百度前端技术学院</td>
+                        <td>6000</td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td>百度前端技术学院</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td>百度前端技术学院</td>
+                        <td>4000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="frame">
+            <input type="text" name="target_change">
+        </div>
+        <div id="bg_change">
+            <ul id="list">
+                <li class="tg1">1</li>
+                <li class="tg2">2</li>
+                <li class="tg3">3</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var li = document.getElementById('list').getElementsByTagName('li');
+        var bg = document.getElementById('bg_change');
+        li.onclick = function (event) {
+            if(event.target.className == 'tg1'){
+                bg.style.background = 'green';
+            }else if(event.target.className == 'tg2'){
+                bg.style.background = 'linear-gradient(blue 50%,green 50%)';
+            }else{
+                bg.style.background = 'blue';
+            }
+        }
+        <!--
+        for (var i=0 ; i<li.length ; i++){
+            if(li[i].className == 'tg1'){
+                li[i].onclick = function () {
+                    bg.style.background = 'green';
+                }
+            }else if(li[i].className == 'tg2'){
+                li[i].onclick = function () {
+                    bg.style.background = 'linear-gradient(to right ,blue 50%,green 50%)';
+                }
+            }else{
+                li[i].onclick = function () {
+                    bg.style.background = 'blue';
+                }
+            }
+        }
+     -->
+    </script>
+</body>
+</html>

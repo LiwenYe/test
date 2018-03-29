@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.main{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+.main table thead th{
+    text-align: left;
+    color: white;
+    background: black;
+}
+
+.main table tbody tr:nth-child(-n+3){
+    color: red;
+}
+
+.main table tbody tr:nth-child(even){
+    background: darkgray;
+}
+
+.main .frame{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.main .frame input{
+    width: 50%;
+}
+
+.main .frame input:focus{
+    width: 100%;
+}
+
+.main #bg_change{
+    width: 100%;
+    height: 100px;
+    background: green;
+    position: relative;
+}
+
+.main #bg_change ul{
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main #bg_change ul li{
+    padding: 5px 10px;
+    background: darkgrey;
+    color: #ffffff;
+    margin-left: 3px;
+}
